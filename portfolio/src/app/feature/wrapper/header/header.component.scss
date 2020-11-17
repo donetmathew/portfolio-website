@@ -1,0 +1,31 @@
+.header-container{
+    font-size: var(--fz-xs);
+    font-family: var(--font-mono);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    background-color: var(--dark-navy);
+    padding: 0 5rem;
+    &__logo{
+            padding: 1rem;
+            color: var(--slate);
+    }
+    &__nav{
+        .section-wrapper{
+            list-style-type: none;
+            display: flex;
+            .section{
+                padding: 1rem;
+                color: var(--slate);
+                &:hover{
+                    color: var(--green);
+                }
+                &__navOrder{
+                    font-size: var(--fz-xxs);
+                    color: var(--green);
+                }
+            }      
+         }
+    }
+}
