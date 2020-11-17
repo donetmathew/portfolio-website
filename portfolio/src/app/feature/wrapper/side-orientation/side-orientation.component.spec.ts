@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SideOrientationComponent } from './side-orientation.component';
 
@@ -6,7 +6,7 @@ describe('SideOrientationComponent', () => {
   let component: SideOrientationComponent;
   let fixture: ComponentFixture<SideOrientationComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SideOrientationComponent ]
     })
