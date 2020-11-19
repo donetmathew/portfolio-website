@@ -9,10 +9,12 @@ import { ConfigService } from 'src/app/core/config.service';
 export class WrapperComponent implements OnInit {
 
   constructor(private serv:ConfigService) { }
-
-  public headerConfig=this.serv.config.header;
+  public config:any=this.serv.getConfig();
+  public headerConfig=this.config.header;
+  public introConfig=this.config.intro;
 
   ngOnInit(): void {
+    
   }
 
 }

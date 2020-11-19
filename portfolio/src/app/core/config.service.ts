@@ -7,7 +7,7 @@ export class ConfigService {
 
   constructor() { }
 
-  public config:any={
+  private config:any={
     header:{
       logo:"Logo",
       section:[
@@ -39,6 +39,36 @@ export class ConfigService {
         icon:"",
         text:""
       }]
+    },
+    intro:{
+      introHeader:{
+        title:"Hi, My name is",
+        customCss:{
+          color:""
+        }
+      },
+      introSubHeader:{
+        title:"Donet Mathew",
+        customCss:{
+          color:""
+        }
+      },
+      introDescription:{
+        title:"I build things for the web",
+        customCss:{
+          color:""
+        }
+      },
+      introSection:{
+        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between. I am currently working with cool folks at Deloitte USI.",
+        customCss:{
+          color:""
+        }
+      }
     }
+  }
+
+  getConfig(){
+    return this.config;
   }
 }

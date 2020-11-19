@@ -4,11 +4,12 @@ import { WrapperComponent } from './wrapper.component';
 import { WrapperRoutingModule } from './wrapper-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { SideOrientationComponent } from './side-orientation/side-orientation.component';
+import { IntroComponent } from './intro/intro.component';
 
 
 
 @NgModule({
-  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent],
+  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent],
   imports: [
     CommonModule,
     WrapperRoutingModule
