@@ -1,0 +1,12 @@
+
+:host{
+    display: inline-block;
+}
+
+.typed-class::after{
+    content:"";
+    margin-left: 1.5rem;
+    border-right: 1px solid var(--slate);
+    color: var(--slate);
+}
+
