@@ -57,7 +57,7 @@ export class ConfigService {
         title:"I am a",
         typedAnimationCoonfig:{
           words:["Frontend Developer","Fitness enthusiast","Proud Indian"],
-          timer:400
+          timer:100
         },
         customCss:{
           color:""

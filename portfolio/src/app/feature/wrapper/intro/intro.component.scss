@@ -11,7 +11,7 @@
     }
     .introSubHeader{
         .big-heading{
-            font-size: clamp(4rem, 8vw, 8rem);
+            font-size: clamp(4rem, 8vw, 6rem);
             margin-top: 3rem;
             color: var(--lightest-slate);
             line-height: 0.9;
@@ -19,7 +19,7 @@
     }
     .introSubDescription{
         .big-heading{
-            font-size: clamp(4rem, 8vw, 8rem);
+            font-size: clamp(4rem, 8vw, 6rem);
             margin-top: 3rem;
             color: var(--slate);
             line-height: 0.9;
