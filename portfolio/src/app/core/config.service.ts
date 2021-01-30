@@ -25,21 +25,6 @@ export class ConfigService {
         }
       ]
     },
-    orientation:{
-      left:[{
-        icon:"",
-        text:""
-      },{
-        icon:"",
-        text:""
-      },{
-        icon:"",
-        text:""
-      },{
-        icon:"",
-        text:""
-      }]
-    },
     intro:{
       introHeader:{
         title:"Hi, My name is",
@@ -64,11 +49,14 @@ export class ConfigService {
         }
       },
       introSection:{
-        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between. I am currently working with cool folks at Deloitte USI.",
+        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between.",
         customCss:{
           color:""
         }
       }
+    },
+    aboutSection:{
+
     }
   }
 

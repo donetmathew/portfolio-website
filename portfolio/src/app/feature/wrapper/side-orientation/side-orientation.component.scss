@@ -1,0 +1,58 @@
+.side-orientation-container{
+    &__left{
+        position: fixed;
+        left: 20px;
+        bottom:0;
+        .social-media::after{
+            content: "";
+            width: 1px;
+            height: 150px;
+            background-color: var(--light-slate);
+            display: block;
+            /* text-align: center; */
+            margin: 0 auto;
+        }
+        .social-media{
+            list-style: none;
+            .icons{
+                width: 25px;
+                padding: 10px 0;
+                .feather{
+                    color: var(--slate);
+                }
+            }
+            a:hover{
+                color: var(--green);
+
+            }
+            .icons:hover{
+                    svg{color: var(--green);}
+            }
+        }
+    }
+    
+    &__right{
+        position: fixed;
+        right: 20px;
+        bottom: 0;
+        a{
+            writing-mode: vertical-rl;
+            padding:0 0 10px 5px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: var(--slate);
+            &:hover{
+                color: var(--green);
+            }
+        }
+       .gmail::after{
+        content: "";
+        width: 1px;
+        height: 150px;
+        background-color: var(--light-slate);
+        display: block;
+        margin: 0 auto;
+       }
+    }
+}
