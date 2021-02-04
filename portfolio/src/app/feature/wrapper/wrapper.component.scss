@@ -1,3 +1,8 @@
-.main-content{
-    padding: 0 8rem;
+.main-wrapper{
+    .main-content{
+        padding: 0 8rem;
+        .section{
+            margin: 4rem 0;
+        }
+    }
 }

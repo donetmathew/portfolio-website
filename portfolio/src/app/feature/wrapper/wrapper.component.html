@@ -1,8 +1,14 @@
 <div class="main-wrapper">
+    <section class="main-header">
         <app-header [config]="headerConfig"></app-header>
+    </section>
         <app-side-orientation></app-side-orientation>
     <main class="main-content">
-        <app-intro [config]="introConfig"></app-intro>
-        <app-about></app-about>
+        <section class="section main-intro">
+            <app-intro [config]="introConfig"></app-intro>
+        </section>
+        <section class="section main-about">
+            <app-about></app-about>
+        </section>
     </main>
 </div>

@@ -18,7 +18,7 @@
     }
     .introSubDescription{
         .big-heading{
-            font-size: clamp(4rem, 8vw, 6rem);
+            font-size: clamp(4rem, 8vw, 5rem);
             margin-top: 3rem;
             color: var(--slate);
             line-height: 0.9;
@@ -28,6 +28,21 @@
         p{
             margin: 4rem 0 0;
             max-width: 500px;
+        }
+    }
+    .introMailLink{
+        margin: 5rem 0;
+        .email-link{
+            text-decoration: none;
+            color: var(--green);
+            padding: 10px;
+            border: 1px solid var(--green);
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .email-link:hover{
+            transform: translateY(-.5rem);
         }
     }
 }
