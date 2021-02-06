@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   selector: 'app-side-orientation',
   templateUrl: './side-orientation.component.html',
-  styleUrls: ['./side-orientation.component.scss']
+  styleUrls: ['./side-orientation.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class SideOrientationComponent implements OnInit {
 

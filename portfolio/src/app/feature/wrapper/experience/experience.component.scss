@@ -1,0 +1,15 @@
+.experience-wrapper{
+    .experience-container{
+        display: flex;
+        .experience__leftPanel{
+            flex: 0 0 20%;
+            ul{
+                li{
+                    list-style: none;
+                    border-left: 1px solid var(--lightest-navy);
+                    padding: 15px 0 15px 12px;
+                }
+            }
+        }
+    }
+}

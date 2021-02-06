@@ -1,29 +1,22 @@
 .about-wrapper{
     margin-top: 4rem;
     color:var(--lightest-slate);
-    .about__title::before{
-        content:"01.";
-        color: var(--green);
-    }
-    .about__title::after{
-        content:"";
-        height: 1px;
-        width:200px !important;
-        margin-left: 1rem;
-
-    }
+    font-family: var(--font-mono);
     .about__content{
         padding: 5rem 0;
+        display: table;
         .about__content--left{
-            float: left;
             margin-right: 3rem;
+            display: table-cell;
             .profileImage{
                 width: 250px;
                 border-radius: 50%;
+                margin-right: 2rem;
             }
         }
         .about__content--right{
-            
+            display: table-cell;
+            vertical-align: middle;
         }
     }
 }

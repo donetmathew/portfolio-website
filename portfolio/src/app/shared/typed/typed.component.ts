@@ -1,9 +1,10 @@
-import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-typed',
   templateUrl: './typed.component.html',
-  styleUrls: ['./typed.component.scss']
+  styleUrls: ['./typed.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class TypedComponent implements OnInit {
 
@@ -13,7 +14,7 @@ export class TypedComponent implements OnInit {
   public isDeleting: Boolean = false;
   public txt = "";
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2, private cd:ChangeDetectorRef) { }
 
   ngOnInit(): void {
 
@@ -50,6 +51,7 @@ export class TypedComponent implements OnInit {
 
     setTimeout(() => {
       this.type();
+      this.cd.detectChanges();
     }, delay)
   }
 }

@@ -7,11 +7,12 @@ import { SideOrientationComponent } from './side-orientation/side-orientation.co
 import { IntroComponent } from './intro/intro.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 
 @NgModule({
-  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent],
+  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent, ExperienceComponent],
   imports: [
     CommonModule,
     WrapperRoutingModule,

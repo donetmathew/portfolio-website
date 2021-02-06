@@ -12,6 +12,8 @@ export class WrapperComponent implements OnInit {
   public config:any=this.serv.getConfig();
   public headerConfig=this.config.header;
   public introConfig=this.config.intro;
+  public aboutConfig=this.config.about;
+  public experienceConfig=this.config.experience;
 
   ngOnInit(): void {
     

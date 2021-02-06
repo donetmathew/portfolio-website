@@ -1,0 +1,17 @@
+.title-wrapper{
+    .about__title::before{
+        content:attr(data-sectionNumber);
+        color: var(--green);
+    }
+    .about__title::after{
+        content:"";
+        position: relative;
+        top: -5px;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+        display: inline-block;
+        background-color:  var(--lightest-navy);;
+
+    }
+}

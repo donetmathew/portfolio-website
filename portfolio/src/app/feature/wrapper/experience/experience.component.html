@@ -1,0 +1,16 @@
+
+<div class="experience-wrapper">
+    <app-title [titleConfig]="config.titleSection"></app-title>
+    <div class="experience-container">
+        <div class="experience__leftPanel">
+            <ul class="">
+                <li *ngFor="let item of config.list;index as i" (click)="showJobDesc(i)">{{item.workplace}}</li>
+            </ul>
+        </div>
+        <div class="experience__rightPanel">
+            <h2> <span>{{config.list[index].designation}}</span><span class="workplace">&nbsp;@&nbsp;{{config.list[index].workplace}}</span></h2>
+            <p>{{config.list[index].period}}</p>
+            {{config.list[index].jobDescription}}
+        </div>
+    </div>
+</div>

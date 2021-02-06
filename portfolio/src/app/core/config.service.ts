@@ -55,8 +55,40 @@ export class ConfigService {
         }
       }
     },
-    aboutSection:{
-
+    about:{
+      titleSection:{
+        sectionNumber:"01.",
+        title:"About Me"
+      },
+      mainTitle:"About Me",
+      profilePic:"assets/profile.jpg",
+      description:"Content adding....Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, vitae placeat. Maxime quas ratione molestias recusandae? Voluptatum aperiam architecto, perspiciatis pariatur rerum autem non quisquam omnis? Tempora ea sit saepe?"
+    },
+    experience:{
+      titleSection:{
+        sectionNumber:"02.",
+        title:"Experience"
+      },
+      list:[
+        {
+          workplace:"Deloitte USI",
+          designation:"Consultant",
+          period:"October 2020 - Present",
+          jobDescription:"lorem ispum 0"
+        },
+        {
+          workplace:" GEP Worldwide",
+          designation:"Web Engineer",
+          period:"June 2019 - July 2020",
+          jobDescription:"lorem ispum 1"
+        },
+        {
+          workplace:"BTS",
+          designation:"Frontend Developer",
+          period:"November 2019 - July 2019",
+          jobDescription:"lorem ispum 2"
+        }
+      ]
     }
   }
 

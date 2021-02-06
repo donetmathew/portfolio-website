@@ -19,6 +19,7 @@
             .section{
                 padding: 1rem;
                 color: var(--slate);
+                cursor: pointer;
                 &:hover{
                     color: var(--green);
                 }
