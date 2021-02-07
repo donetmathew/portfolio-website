@@ -1,6 +1,7 @@
 .experience-wrapper{
     .experience-container{
         display: flex;
+        padding-top: 4rem;
         .experience__leftPanel{
             flex: 0 0 20%;
             ul{
@@ -8,7 +9,21 @@
                     list-style: none;
                     border-left: 1px solid var(--lightest-navy);
                     padding: 15px 0 15px 12px;
+                    cursor: pointer;
                 }
+                li:hover{
+                    background-color: var(--light-navy);
+                    color: var(--green);
+                }
+                .selected{
+                    border-left: 2px solid var(--green);
+                }
+            }
+        }
+        .experience__rightPanel{
+            padding-left: 4rem;
+            .workplace{
+                color: var(--green);
             }
         }
     }

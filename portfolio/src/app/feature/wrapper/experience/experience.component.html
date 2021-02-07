@@ -3,8 +3,8 @@
     <app-title [titleConfig]="config.titleSection"></app-title>
     <div class="experience-container">
         <div class="experience__leftPanel">
-            <ul class="">
-                <li *ngFor="let item of config.list;index as i" (click)="showJobDesc(i)">{{item.workplace}}</li>
+            <ul #list class="">
+                <li  *ngFor="let item of config.list;index as i" (click)="showJobDesc(i, $event)">{{item.workplace}}</li>
             </ul>
         </div>
         <div class="experience__rightPanel">

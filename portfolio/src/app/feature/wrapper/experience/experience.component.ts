@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -9,17 +9,26 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 export class ExperienceComponent implements OnInit {
 
   @Input() config;
+  @ViewChild('list') list :ElementRef;
   public index = 0;
 
-  constructor() { }
+  constructor(private renderer :Renderer2) { }
 
   ngOnInit(): void {
+    
   }
 
-  showJobDesc(i){
+  showJobDesc(i, e){
     this.index=i;
-    console.log(this.config.list[this.index]);
-    
+   for (let index = 0; index < this.list.nativeElement.children.length; index++) {
+     if(this.list.nativeElement.children[index].classList.contains("selected")){
+      this.renderer.removeClass(this.list.nativeElement.children[index],"selected");
+     }
+   }
+    this.renderer.addClass(e.target,"selected");
+  }
+  ngAfterViewInit(){
+    this.renderer.addClass(this.list.nativeElement.childNodes[0],'selected');
   }
 
 }
