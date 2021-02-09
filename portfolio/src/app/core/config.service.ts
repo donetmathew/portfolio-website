@@ -49,7 +49,7 @@ export class ConfigService {
         }
       },
       introSection:{
-        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between.",
+        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between. Currently, I'm working with cool folks at Deloitte USI",
         customCss:{
           color:""
         }
@@ -62,7 +62,7 @@ export class ConfigService {
       },
       mainTitle:"About Me",
       profilePic:"assets/profile.jpg",
-      description:"Content adding....Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, vitae placeat. Maxime quas ratione molestias recusandae? Voluptatum aperiam architecto, perspiciatis pariatur rerum autem non quisquam omnis? Tempora ea sit saepe?"
+      description:`Hello! I'm Donet Mathew, a software engineer based in Mumbai. <br><br>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br> My goal is to always build products that provide pixel-perfect, performant experiences.`
     },
     experience:{
       titleSection:{

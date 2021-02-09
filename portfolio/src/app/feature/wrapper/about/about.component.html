@@ -4,6 +4,6 @@
         <div class="about__content--left">
             <img class="profileImage" src="{{config.profilePic}}" alt="Profile picture">
         </div>
-        <div class="about__content--right">{{config.description}}</div>
+        <div class="about__content--right" [innerHTML]="config.description"></div>
     </div>
 </div>

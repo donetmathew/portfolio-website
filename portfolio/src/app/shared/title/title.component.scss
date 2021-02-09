@@ -1,4 +1,5 @@
 .title-wrapper{
+    font-family: var(--font-mono);
     .about__title::before{
         content:attr(data-sectionNumber);
         color: var(--green);
