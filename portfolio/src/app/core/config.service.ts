@@ -89,6 +89,30 @@ export class ConfigService {
           jobDescription:"lorem ispum 2"
         }
       ]
+    },
+    inspiringQuotesConfig:{
+      carouselConfig:{
+        list:[
+        {
+          title:"carousel 1"
+        },
+        {
+          title:"carousel 2"
+        },
+        {
+          title:"carousel 3"
+        }
+      ],
+      previous:{
+        title:"",
+        img:""
+      },
+      next:{
+        title:"",
+        img:""
+      }
+    }
+
     }
   }
 
