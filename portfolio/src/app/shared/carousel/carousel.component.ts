@@ -1,9 +1,10 @@
-import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild, HostListener } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild, HostListener, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class CarouselComponent implements OnInit {
 
@@ -16,6 +17,7 @@ export class CarouselComponent implements OnInit {
   constructor(private renderer:Renderer2) { }
 
   ngOnInit(): void {
+    console.log(this.config);
     
   }
   ngAfterViewInit(){
@@ -35,7 +37,7 @@ export class CarouselComponent implements OnInit {
       if(i==0){
         this.renderer.addClass(el,"current-slide");
       }
-     });
+    });
   }
 
   nextBtnClick(e){

@@ -1,16 +1,19 @@
 <div class="carousel-wrapper">
     <div class="carousel__trackContainer">
         <button #prevBtn class="carousel__btn--left" (click)="prevBtnClick($event)">
-            prev
+            <img src="../../../assets/left-arrow.png" alt="left Arrow">
         </button>
         <ul #carouselTrack class="carousel__track">
-            <li *ngFor="let item of config.carouselConfig.list;index as i" class="carousel-slide">hello world {{i+1}}</li>
+            <li *ngFor="let item of config.list;index as i" class="carousel-slide">
+                {{item.title}}
+            </li>
+            
         </ul>
         <button #nextBtn class="carousel__btn--right" (click)="nextBtnClick($event)">
-            next
+            <img src="../../../assets/right-arrow.png" alt="left Arrow">
         </button>
     </div>
     <div class="carousel__nav">
-        <button *ngFor="let item of config.carouselConfig.list;" class="carousel__indicator"></button>
+        <button *ngFor="let item of config.list;" class="carousel__indicator"></button>
     </div>
 </div>

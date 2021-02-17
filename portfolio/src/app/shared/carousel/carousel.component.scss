@@ -5,20 +5,24 @@
     .carousel__trackContainer{
         height: 100%;
         overflow: hidden;
+        border: 1.5px solid var(--green);
         .carousel__btn--left{
+            background: var(--dark-navy);
+            border: none;
+            cursor: pointer;
             position: absolute;
             transform: translateY(-50%);
-            transition: tranform 250ms ease-in;
             top: 50%;
             z-index: 2;
+            left: 2rem;
         }
         .carousel__track{
             list-style: none;
             height: 100%;
             width: 100%;
             position: relative;
+            transition: all 250ms ease-in;
             .carousel-slide{
-                background-color: yellow;
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -27,19 +31,24 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 0 8rem;
+                font-size: 30px;
+                font-style: italic;
             }
         }
         .carousel__btn--right{
+            background: var(--dark-navy);
+            border: none;
+            cursor: pointer;
             position: absolute;
-            transform: translatey(-50%);
+            transform: translateY(-50%);
             top: 50%;
-            right: 0;
+            right: 2rem;
         }
     }
     .carousel__nav{
         display: flex;
         justify-content: center;
-        background: white;
         .carousel__indicator{
             margin-right: 5px;
             width: 15px;

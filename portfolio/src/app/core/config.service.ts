@@ -91,16 +91,20 @@ export class ConfigService {
       ]
     },
     inspiringQuotesConfig:{
+      titleSection:{
+        sectionNumber:"03.",
+        title:"Inspiring Quotes"
+      },
       carouselConfig:{
         list:[
         {
-          title:"carousel 1"
+          title:"Stay hungry, Stay Foolish"
         },
         {
-          title:"carousel 2"
+          title:"Have the courage to follow your heart and intuition. They somehow know what you truly want to become"
         },
         {
-          title:"carousel 3"
+          title:"The greatest risk in life is not taking any risks"
         }
       ],
       previous:{
