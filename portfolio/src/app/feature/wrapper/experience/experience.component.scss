@@ -23,6 +23,19 @@
         }
         .experience__rightPanel{
             padding-left: 4rem;
+            ul{
+                position: relative;
+            }
+            .list{
+                padding: 1rem 0 1rem 3rem;
+                list-style:none;
+            }
+            .list::before{
+                content:"▹";
+                color:var(--green);
+                position: absolute;
+                left:0;
+            }
             .workplace{
                 color: var(--green);
             }

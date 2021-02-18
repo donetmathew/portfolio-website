@@ -74,19 +74,55 @@ export class ConfigService {
           workplace:"Deloitte USI",
           designation:"Consultant",
           period:"October 2020 - Present",
-          jobDescription:"lorem ispum 0"
+          jobDescription:[
+            {
+              list:"Created responsive UI and web components in a CMS for the client Google."
+            },
+            {
+              list:"Worked on web acccesibility so as to make the website compatible to disabled people."
+            },
+            {
+              list:"Contributed in the ideation phase for the client Abbvie."
+            }
+          ]
         },
         {
           workplace:" GEP Worldwide",
           designation:"Web Engineer",
           period:"June 2019 - July 2020",
-          jobDescription:"lorem ispum 1"
+          jobDescription:[
+            {
+              list:"Built reuseable and efficient components using Angular 7 framework."
+            },
+            {
+              list:"Developed the architecture for the module SPEND in the product 'Smart By GEP'."
+            },
+            {
+              list:"Developed complex grids and highcharts using AG-grid and Highcharts."
+            },
+            {
+              list:"Trained several interns and junior developers for Angular framework."
+            }
+          ]
         },
         {
           workplace:"BTS",
           designation:"Frontend Developer",
-          period:"November 2019 - July 2019",
-          jobDescription:"lorem ispum 2"
+          period:"November 2017 - July 2019",
+          jobDescription:[
+            {
+              list:"Liasing with overseas consultants to implement digital solution for clients through development, customization and productionizing end solutions with high quality"
+            },
+            {
+              list:"Implemented and designed an e-learning product 'Know The Business' for clients IBM, Mckinsey and STC."
+            },
+            {
+              list:"Customized the product PULSE for the client SAP MLL and TD Bank using Vanilla JavaScript."
+            },
+            {
+              list:"Participated in complete product development cycle from ideation to implementation for in-house product 'Generic MBS' under agile framework."
+            }
+          ]
         }
       ]
     },
