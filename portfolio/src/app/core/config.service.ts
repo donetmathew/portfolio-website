@@ -79,7 +79,7 @@ export class ConfigService {
               list:"Created responsive UI and web components in a CMS for the client Google."
             },
             {
-              list:"Worked on web acccesibility so as to make the website compatible to disabled people."
+              list:"Worked on web accessibility so as to make the website compatible to disabled people."
             },
             {
               list:"Contributed in the ideation phase for the client Abbvie."
@@ -87,7 +87,7 @@ export class ConfigService {
           ]
         },
         {
-          workplace:" GEP Worldwide",
+          workplace:"GEP Worldwide",
           designation:"Web Engineer",
           period:"June 2019 - July 2020",
           jobDescription:[
