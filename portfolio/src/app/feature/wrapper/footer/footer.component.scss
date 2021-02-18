@@ -1,0 +1,42 @@
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    .footer-left__section{
+        flex: 35% 0 0;
+    }
+    .footer-mid__section{
+        .footTitle{
+            text-align: center;
+            font-family: 'Sacramento',cursive;
+            margin: 10px;
+        }
+        .madewithlove{
+            .heart{
+                color:var(--green);
+            }
+        }
+    }
+    .footer-right__section{
+        .social-media{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            .icons{
+                width: 25px;
+                padding: 10px 0;
+                margin-right: 7px;
+                text-align: center;
+                .feather{
+                    color: var(--slate);
+                }
+            }
+            a:hover{
+                color: var(--green);
+
+            }
+            .icons:hover{
+                    svg{color: var(--green);}
+            }
+        }
+    }
+}

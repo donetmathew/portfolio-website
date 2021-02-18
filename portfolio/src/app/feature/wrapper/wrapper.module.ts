@@ -9,11 +9,12 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent, ExperienceComponent, QuotesComponent],
+  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent, ExperienceComponent, QuotesComponent, FooterComponent],
   imports: [
     CommonModule,
     WrapperRoutingModule,
