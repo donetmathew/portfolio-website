@@ -9,3 +9,21 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin respond($breakpoint){
+    @if($breakpoint == tab_landscape){
+        @media(max-width: 1024px){ //1200px
+            @content;
+        }
+    }
+    @if($breakpoint == tab_portrait){
+         @media(max-width: 768px){ //900px
+            @content;
+        }
+    }
+    @if($breakpoint == phone){
+        @media(max-width: 600px){   //600px
+            @content;
+        }
+    }
+}

@@ -1,6 +1,18 @@
+@import '../../../assets/mixins';
 .main-wrapper{
     .main-content{
         padding: 0 12rem;
+        @include respond(tab_landscape){
+            padding: 0 8rem;
+            font-size: var(--fz-md);
+        }
+        @include respond(tab_portrait){
+            padding: 0 7rem;
+            font-size: var(--fz-sm);
+        }
+        @include respond(phone){
+            padding: 0 3rem;
+        }
         .section{
             margin: 4rem 0;
         }

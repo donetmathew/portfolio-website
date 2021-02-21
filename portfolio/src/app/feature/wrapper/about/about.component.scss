@@ -1,12 +1,21 @@
+@import '../../../../assets/mixins';
 .about-wrapper{
     margin-top: 4rem;
     color:var(--lightest-slate);
     .about__content{
         padding: 5rem 0;
         display: table;
+        @include respond(phone){
+            display: block;
+            text-align: center;
+        }
         .about__content--left{
             margin-right: 3rem;
             display: table-cell;
+            @include respond(phone){
+                display: block;
+                margin-bottom: 3rem;
+            }
             .profileImage{
                 width: 250px;
                 border-radius: 50%;
@@ -16,6 +25,10 @@
         .about__content--right{
             display: table-cell;
             vertical-align: middle;
+            @include respond(phone){
+                display: block;
+                text-align: center;
+            }
         }
     }
 }

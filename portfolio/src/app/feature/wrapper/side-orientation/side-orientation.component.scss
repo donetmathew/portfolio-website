@@ -1,4 +1,6 @@
+@import '../../../../assets/mixins';
 .side-orientation-container{
+    
     &__left{
         position: fixed;
         left: 20px;
@@ -54,5 +56,10 @@
         display: block;
         margin: 0 auto;
        }
+    }
+}
+@include respond(phone){
+    :host{
+        display:none;
     }
 }
