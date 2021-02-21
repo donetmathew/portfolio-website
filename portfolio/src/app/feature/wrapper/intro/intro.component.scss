@@ -1,3 +1,4 @@
+@import '../../../../assets/mixins';
 .intro-wrapper{
     .introHeader{
         .big-heading{
@@ -14,6 +15,10 @@
             margin-top: 3rem;
             color: var(--lightest-slate);
             line-height: 0.9;
+            @include respond(phone){
+                font-size: clamp(3.5rem, 8vw, 3rem);
+                margin-top: 2rem;
+            }
         }
     }
     .introSubDescription{
@@ -22,12 +27,19 @@
             margin-top: 3rem;
             color: var(--slate);
             line-height: 0.9;
+            @include respond(phone){
+                font-size: clamp(2.5rem, 7vw, 2.5rem);
+                margin-top: 2rem;
+            }
         }
     }
     .introSection{
         p{
             margin: 4rem 0 0;
             max-width: 500px;
+            @include respond(phone){
+                margin: 3rem 0 0;
+            }
         }
     }
     .introMailLink{
