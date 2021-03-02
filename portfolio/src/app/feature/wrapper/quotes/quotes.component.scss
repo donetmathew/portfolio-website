@@ -1,5 +1,10 @@
+
+@import '../../../../assets/mixins';
 .quotes-wrapper{
     .carousel-wrapper{
         padding: 5rem 0;
+        @include respond(phone){
+            padding: 2rem 0;
+        }
     }
 }

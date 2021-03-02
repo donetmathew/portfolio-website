@@ -6,6 +6,9 @@
         padding: 5rem 0;
         display: table;
         @include respond(phone){
+            padding: 3rem 0;
+        }
+        @include respond(phone){
             display: block;
             text-align: center;
         }
