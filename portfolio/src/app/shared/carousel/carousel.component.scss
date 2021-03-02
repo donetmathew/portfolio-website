@@ -4,7 +4,7 @@
     height: 500px;
     position: relative;
     @include respond(phone){
-        height: 350px;
+        height: 400px;
     }
     .carousel__trackContainer{
         height: 100%;
