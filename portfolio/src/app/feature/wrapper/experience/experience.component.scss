@@ -1,15 +1,31 @@
+@import '../../../../assets/mixins';
 .experience-wrapper{
     .experience-container{
         display: flex;
         padding-top: 4rem;
+        @include respond(phone){
+            display: block;
+            padding-top: 2rem;
+        }
         .experience__leftPanel{
             flex: 0 0 20%;
+            @include respond(phone){
+                flex: 0;
+            }
             ul{
+                @include respond(phone){
+                    display: flex;
+                }
                 li{
                     list-style: none;
                     border-left: 1px solid var(--lightest-navy);
                     padding: 15px 0 15px 12px;
                     cursor: pointer;
+                    @include respond(phone){
+                        border-bottom: 1px solid var(--lightest-navy);
+                        border-left: none !important;
+                        padding: 15px 15px 15px 12px;
+                    }
                 }
                 li:hover{
                     background-color: var(--light-navy);
@@ -18,11 +34,29 @@
                 .selected{
                     border-left: 2px solid var(--green);
                     color: var(--green);
+                    @include respond(phone){
+                        border-bottom: 2px solid var(--green);
+                        border-left: none !important;
+                    }
                 }
             }
         }
         .experience__rightPanel{
+            @include respond(phone){
+               padding: 1.5rem 0 0 1rem;
+            }
             padding-left: 4rem;
+            .designation{
+                @include respond(phone){
+                    padding: 1.5rem 0 0 0;
+                    font-size: var(--fz-lg);
+                 }
+            }
+            .workplace{
+                @include respond(phone){
+                    font-size: var(--fz-lg);
+                 }
+            }
             ul{
                 position: relative;
             }
