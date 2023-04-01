@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { asNativeElements, ChangeDetectionStrategy, Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +8,24 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer:Renderer2) { }
 
   @Input() config;
+  @ViewChild('sideMenu', { static: false }) sideMenu: ElementRef;
+  @ViewChild('closeIcon', { static: false }) closeIcon: ElementRef;
+
   ngOnInit(): void {
-    
+   
+  }
+
+  onMenuClick(e){
+    this.renderer.addClass(this.sideMenu.nativeElement,"side-menu");
+    this.renderer.removeClass(this.sideMenu.nativeElement,"menu")
+  }
+
+  onClose(){
+    this.renderer.removeClass(this.sideMenu.nativeElement,"side-menu");
+    this.renderer.addClass(this.sideMenu.nativeElement,"menu")
   }
 
 }

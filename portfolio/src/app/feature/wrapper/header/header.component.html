@@ -1,10 +1,25 @@
 <header class="header-container">
     <div class="header-container__logo"></div>
-    <div class="header-container__nav">
+    <nav class="header-container__nav">
         <ul class="section-wrapper">
             <li *ngFor="let item of config.section;index as i" class="section">
-               <span class="section__navOrder">{{0}}{{i+1}}.</span> {{item.title}}
+               <span class="section__navOrder">{{0}}{{i+1}}.</span>&nbsp;<a href="{{item?.id}}">{{item.title}}</a> 
             </li>
         </ul>
-    </div>
+    </nav>
+    <nav class="header-container__nav__mobile">
+        <div class="menu-icon" (click)="onMenuClick($event)">
+            <img src="../../../../assets/images/icons8-menu-bar-48.png"/>        
+        </div>
+        <aside #sideMenu class="menu">
+            <div #closeIcon class="close-icon" (click)="onClose()">
+                <img src="../../../../assets/images/icons8-close-50.png"/>        
+            </div>
+            <ul class="section-wrapper">
+                <li *ngFor="let item of config.section;index as i" class="section">
+                   <span class="section__navOrder">{{0}}{{i+1}}.</span>&nbsp;<a href="{{item?.id}}">{{item.title}}</a> 
+                </li>
+            </ul>
+        </aside>    
+    </nav>
 </header>

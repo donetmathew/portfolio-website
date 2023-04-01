@@ -12,16 +12,16 @@ export class ConfigService {
       logo:"Logo",
       section:[
         {
-          title:"About"
+          title:"About",
+          id:"#about"
         },
         {
-          title:"Experience"
+          title:"Experience",
+          id:"#experience"
         },
         {
-          title:"Work"
-        },
-        {
-          title:"Contact"
+          title:"Contact",
+          id:"#footer"
         }
       ]
     },

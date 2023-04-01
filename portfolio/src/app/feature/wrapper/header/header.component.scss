@@ -1,3 +1,4 @@
+@import '../../../../assets/mixins';
 .header-container{
     display: block;
     font-size: var(--fz-xs);
@@ -8,11 +9,50 @@
     height: 7rem;
     background-color: var(--dark-navy);
     padding: 0 5rem;
+    @include respond(phone){
+        padding: 0 1.5rem;
+    }
+
     &__logo{
             padding: 1rem;
             color: var(--slate);
     }
     &__nav{
+        @include respond(phone){
+            display:none
+        }
+        &__mobile{
+            @media only screen and (min-width: 599px)  {
+                display: none;
+            }
+            .menu{
+                display: none;
+                transition: all 1s ease-in-out;
+            }
+            .section-wrapper{
+                display: none;
+            }
+            .side-menu{
+                position: fixed;
+                width: 60vw;
+                height: 100vh;
+                background-color: var(--dark-navy);
+                top: 0;
+                right: 0;
+                z-index: 50;
+                transition: all 1s ease-in-out;
+            }
+            .close-icon{
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 20px;
+            }
+        }
+        a{
+            transition: all 2s ease-in-out;
+            text-decoration: none;
+            color: var(--slate);
+        }
         .section-wrapper{
             list-style-type: none;
             display: flex;
