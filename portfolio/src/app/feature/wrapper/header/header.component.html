@@ -15,9 +15,9 @@
             <div #closeIcon class="close-icon" (click)="onClose()">
                 <img src="../../../../assets/images/icons8-close-50.png"/>        
             </div>
-            <ul class="section-wrapper">
+            <ul class="section-wrapper-mob">
                 <li *ngFor="let item of config.section;index as i" class="section">
-                   <span class="section__navOrder">{{0}}{{i+1}}.</span>&nbsp;<a href="{{item?.id}}">{{item.title}}</a> 
+                   <div class="section__navOrder">{{0}}{{i+1}}.</div>&nbsp;<a href="{{item?.id}}">{{item.title}}</a> 
                 </li>
             </ul>
         </aside>    

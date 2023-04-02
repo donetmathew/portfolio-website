@@ -32,6 +32,31 @@
             .section-wrapper{
                 display: none;
             }
+            .section-wrapper-mob{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                font-size: large;
+                text-align: center;
+                .section{
+                    padding: 2rem;
+                    list-style-type: none;
+                    color: var(--slate);
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--green);
+                    }
+                    &__navOrder{
+                        font-size: var(--fz-xxs);
+                        color: var(--green);
+                    }
+                    a{
+                        transition: all 2s ease-in-out;
+                        text-decoration: none;
+                        color: var(--slate);
+                    }
+                }    
+            }
             .side-menu{
                 position: fixed;
                 width: 60vw;
