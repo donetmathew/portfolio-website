@@ -39,9 +39,9 @@ export class ConfigService {
         }
       },
       introDescription:{
-        title:"I am a",
+        title:"I am",
         typedAnimationCoonfig:{
-          words:["Frontend Developer","Fitness enthusiast","Proud Indian"],
+          words:["a web engineer, crafting the future of web","an AWS certified practitioner","a Fitness enthusiast"],
           timer:100
         },
         customCss:{
@@ -49,7 +49,7 @@ export class ConfigService {
         }
       },
       introSection:{
-        title:"I'm a software engineer based in Mumbai, specializing in building exceptional websites, applications, and everything in between. Currently, I'm working with cool folks at Deloitte USI",
+        title:"I'm a software engineer based in Florida, United States specializing in building exceptional websites, applications, and everything in between. Currently, I'm working with cool folks at Walt Disney",
         customCss:{
           color:""
         }
@@ -62,7 +62,7 @@ export class ConfigService {
       },
       mainTitle:"About Me",
       profilePic:"assets/profile.jpg",
-      description:`Hello! I'm Donet Mathew, a software engineer based in Mumbai. <br><br>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br> My goal is to always build products that provide pixel-perfect, performant experiences.`
+      description:`Hello! I'm Donet Mathew, a software engineer based in Florida, United States. <br><br>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br> My goal is to always build products that provide pixel-perfect, performant experiences.`
     },
     experience:{
       titleSection:{
@@ -71,18 +71,53 @@ export class ConfigService {
       },
       list:[
         {
-          workplace:"Deloitte USI",
-          designation:"Consultant",
-          period:"October 2020 - Present",
+          workplace:"The Walt Disney",
+          designation:"Software Engineer ||",
+          period:"Apr 2024 - Sept 2024",
           jobDescription:[
             {
-              list:"Created responsive UI and web components in a CMS for the client Google."
+              list:"Elevating the Disney magic through innovative digital experiences across our resorts, parks and guest experiences.",
             },
             {
-              list:"Worked on web accessibility so as to make the website compatible to disabled people."
+              list:"Built and maintained dynamic, accesible web applicartions for Disney's resorts and parks, ensuring compliance with WCAG standards."
             },
             {
-              list:"Contributed in the ideation phase for the client Abbvie."
+              list:"Integrated and leveraged analytic tools to monitor user behaviour,identify trends and optimize application performance for high traffic platforms."
+            },
+            {
+              list:"Designed and implemented RESTful APIs using Node.js and Express, enabling seamless communication between frontend applications and backend services."
+            }
+          ]
+        },
+        {
+          workplace:"Citi Bank",
+          designation:"Specialist Software Engineer",
+          period:"Apr 2024 - Sept 2024",
+          jobDescription:[
+            {
+              list:"Worked at Citi Bank (via LTIMindtree) on a product to develop comprehensive reports for capital forecasting and assumptions planning, enhancing decision-making processes and financial strategy"
+            },
+            {
+              list:"Migrated a traditional grid to AG-Grid at Citi,implementing business logic and features like inline editing, sorting, pagination, drag and drop, and optimizing performance for large datasets"
+            }
+          ]
+        },
+        {
+          workplace:"Deloitte USI",
+          designation:"Senior Consultant",
+          period:"Oct 2020 - Dec 2023",
+          jobDescription:[
+            {
+              list:"Led a team to orchestrate the end-to-end dvelopment of a cross platform mobile app, revolutionizing sales support for employees."
+            },
+            {
+              list:"Implemented biometric authentication(fingerprint and facial recognition) for the app, enhancing security and streamlining the user experience."
+            },
+            {
+              list:"Developed web APIs using Node.js, AWS Lambda and AWS Fargate, leveraging serverless and containerized solutions."
+            },
+            {
+              list:"Involved in the development of a progressive web app (PWA) for an insurance client, driving the project from ideation to successful delivery. Played a key role in designing, implementing and optimizing the application to meet client requirements and enhance user experience. "
             }
           ]
         },

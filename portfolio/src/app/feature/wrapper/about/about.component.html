@@ -2,7 +2,7 @@
     <app-title [titleConfig]="config.titleSection"></app-title>
     <div class="about__content">
         <div class="about__content--left">
-            <img class="profileImage" src="{{config.profilePic}}" alt="Profile picture">
+            <img class="profileImage" ngSrc="{{config.profilePic}}" width="250" height="250" priority alt="Profile picture">
         </div>
         <div class="about__content--right" [innerHTML]="config.description"></div>
     </div>

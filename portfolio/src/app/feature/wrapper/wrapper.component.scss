@@ -1,20 +1,28 @@
 @import '../../../assets/mixins';
 .main-wrapper{
     .main-content{
-        padding: 0 12rem;
+        padding: 0 18rem;
         @include respond(tab_landscape){
-            padding: 0 8rem;
+            padding: 0 12rem;
             font-size: var(--fz-md);
         }
         @include respond(tab_portrait){
-            padding: 0 7rem;
+            padding: 0 10rem;
             font-size: var(--fz-sm);
         }
         @include respond(phone){
             padding: 0 2rem;
         }
         .section{
-            margin: 4rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #intro{
+            height: calc(100vh - 7rem);
+        }
+        #footer{
+            margin-bottom: 4rem;
         }
     }
 }
