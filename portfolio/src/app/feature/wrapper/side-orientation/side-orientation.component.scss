@@ -3,7 +3,7 @@
     
     &__left{
         position: fixed;
-        left: 20px;
+        left: 40px;
         bottom:0;
         .social-media::after{
             content: "";
@@ -35,7 +35,7 @@
     
     &__right{
         position: fixed;
-        right: 20px;
+        right: 40px;
         bottom: 0;
         a{
             writing-mode: vertical-rl;

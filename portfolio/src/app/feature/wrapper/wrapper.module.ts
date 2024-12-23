@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { WrapperComponent } from './wrapper.component';
 import { WrapperRoutingModule } from './wrapper-routing.module';
 import { HeaderComponent } from './header/header.component';
@@ -18,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     CommonModule,
     WrapperRoutingModule,
-    SharedModule
+    SharedModule,
+    NgOptimizedImage
   ]
 })
 export class WrapperModule { }
