@@ -21,6 +21,10 @@ export class ConfigService {
         },
         {
           title:"Contact",
+          id:"#contact"
+        },
+        {
+          title:"Contact",
           id:"#footer"
         }
       ]
@@ -41,7 +45,7 @@ export class ConfigService {
       introDescription:{
         title:"I am",
         typedAnimationCoonfig:{
-          words:["a web engineer, crafting the future of web","an AWS certified practitioner","a Fitness enthusiast"],
+          words:["a software engineer","a web specialist","an accessibility expert"],
           timer:100
         },
         customCss:{
@@ -49,10 +53,11 @@ export class ConfigService {
         }
       },
       introSection:{
-        title:"I'm a software engineer based in Florida, United States specializing in building exceptional websites, applications, and everything in between. Currently, I'm working with cool folks at Walt Disney",
+        title:"I'm a software engineer based in United States with 8 years of experience specialized in building exceptional websites, native apps, and everything in between. Currently, I'm working with cool folks at",
         customCss:{
           color:""
-        }
+        },
+        companyName:"The Walt Disney"
       }
     },
     about:{
@@ -161,9 +166,15 @@ export class ConfigService {
         }
       ]
     },
-    inspiringQuotesConfig:{
+    skills:{
       titleSection:{
         sectionNumber:"03.",
+        title:"Skills"
+      },
+    },
+    inspiringQuotesConfig:{
+      titleSection:{
+        sectionNumber:"04.",
         title:"Inspiring Quotes"
       },
       carouselConfig:{
@@ -188,7 +199,44 @@ export class ConfigService {
       }
     }
 
-    }
+    },
+    contact: {
+      titleSection:{
+        sectionNumber:"03.",
+        title:"Contact"
+      },
+      contactConfig:[
+      {
+        label: "Name",
+        type: "text",
+        placeholder: "Enter your name",
+        controlName: "name",
+        validators: {
+          required: true,
+          minLength: 3,
+        },
+      },
+      {
+        label: "Email",
+        type: "email",
+        placeholder: "Enter your email",
+        controlName: "email",
+        validators: {
+          required: true,
+          email: true,
+        },
+      },
+      {
+        label: "Message",
+        type: "textarea",
+        placeholder: "Write your message",
+        controlName: "message",
+        validators: {
+          required: true,
+          minLength: 10,
+        },
+      },
+    ]}    
   }
 
   getConfig(){

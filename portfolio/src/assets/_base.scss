@@ -16,8 +16,12 @@
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100,255,218,0.1);
-    --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-sans-regular: "calibre-regular","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono-regular: "sfmono-regular","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-sans-medium: "calibre-medium","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono-medium: "sfmono-medium","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-sans-sb: "calibre-sb","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono-sb: "sfmono-sb","Fira Code","Fira Mono","Roboto Mono",monospace;
     --fz-xxs: 1.4rem;
     --fz-xs: 1.5rem;
     --fz-sm: 1.6rem;
@@ -36,7 +40,7 @@ body{
     background-color: var(--dark-navy);
     min-height: 100vh;
     color: var(--slate);
-    font-family: var(--font-sans);
+    font-family: var(--font-sans-regular);
     font-size: var(--fz-lg);
     line-height: 1.3;
 }
