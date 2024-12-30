@@ -1,7 +1,7 @@
 @import '../../../assets/mixins';
 .main-wrapper{
     .main-content{
-        padding: 0 18rem;
+        padding: 0 20rem;
         @include respond(tab_landscape){
             padding: 0 12rem;
             font-size: var(--fz-md);
