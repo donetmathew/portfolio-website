@@ -22,7 +22,6 @@
     "nvm": "^0.0.4",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
-    "typed.js": "^2.1.0",
     "zone.js": "~0.14.10"
   },
   "devDependencies": {

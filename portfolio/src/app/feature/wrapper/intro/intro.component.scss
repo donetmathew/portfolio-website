@@ -4,18 +4,21 @@
         .big-heading{
             margin: 0px 0px 3rem .4rem;
             color: var(--green);
-            font-family: var(--font-mono);
+            font-family: var(--font-mono-regular);
             font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
             font-weight: 400;
         }
     }
     .introSubHeader{
         .big-heading{
-            font-size: clamp(4rem, 8vw, 6rem);
+            font-size: clamp(8rem, 8vw, 6rem);
             margin-top: 3rem;
             color: var(--lightest-slate);
             line-height: 0.9;
+            font-family: var(--font-sans-sb);
+            font-weight: 600;
             @include respond(phone){
+                font-family: var(--font-sans-sb);
                 font-size: clamp(3.5rem, 8vw, 3rem);
                 margin-top: 2rem;
             }
@@ -23,11 +26,14 @@
     }
     .introSubDescription{
         .big-heading{
-            font-size: clamp(4rem, 8vw, 5rem);
-            margin-top: 3rem;
+            font-size: clamp(7rem, 8vw, 5rem);
+            margin-top: 1rem;
             color: var(--slate);
             line-height: 0.9;
+            font-family: var(--font-sans-sb);
+            font-weight: 600;
             @include respond(phone){
+                font-family: var(--font-sans-sb);
                 font-size: clamp(2.5rem, 7vw, 2.5rem);
                 margin-top: 2rem;
             }
@@ -39,6 +45,10 @@
             max-width: 550px;
             @include respond(phone){
                 margin: 3rem 0 0;
+            }
+            a{
+                color:var(--green);
+                text-decoration: none;
             }
         }
     }
