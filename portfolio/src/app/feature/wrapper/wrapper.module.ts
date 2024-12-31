@@ -10,16 +10,20 @@ import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [WrapperComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent, ExperienceComponent, QuotesComponent, FooterComponent],
+  declarations: [WrapperComponent, ContactComponent, SkillsComponent, HeaderComponent, SideOrientationComponent, IntroComponent, AboutComponent, ExperienceComponent, QuotesComponent, FooterComponent],
   imports: [
     CommonModule,
     WrapperRoutingModule,
     SharedModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ReactiveFormsModule
   ]
 })
 export class WrapperModule { }

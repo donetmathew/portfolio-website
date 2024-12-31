@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "build:prod": "node generate-env.js && ng build --configuration production",
+    "build:dev": "ng build --configuration development",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -19,6 +20,7 @@
     "@angular/platform-browser": "^18.2.13",
     "@angular/platform-browser-dynamic": "^18.2.13",
     "@angular/router": "^18.2.13",
+    "@emailjs/browser": "^4.4.1",
     "nvm": "^0.0.4",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
