@@ -1,0 +1,14 @@
+<div class="skills-wrapper">
+    <app-title [titleConfig]="config.titleSection"></app-title>
+    <p>skills works!</p>
+    <div class="skills-section">
+        <div class="marquee">
+            <div class="skills-grid">
+              <div class="skill-card" *ngFor="let skill of skills">
+                <img [src]="skill.icon" [alt]="skill.name" class="skill-icon" />
+                <p>{{ skill.name }}</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

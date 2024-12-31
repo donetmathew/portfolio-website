@@ -1,0 +1,48 @@
+<div class="contact-wrapper">
+    <app-title [titleConfig]="config.titleSection"></app-title>
+    <div class="contact-form-container">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div *ngFor="let field of fields" class="form-group">
+            <label [for]="field.controlName">{{ field.label }}</label>
+            <ng-container [ngSwitch]="field.type">
+              <!-- Input Field -->
+              <input
+                *ngSwitchCase="'text'"
+                [id]="field.controlName"
+                [type]="field.type"
+                [formControlName]="field.controlName"
+                [placeholder]="field.placeholder"
+                [ngClass]="{'is-invalid': isFieldInvalid(field.controlName)}"
+              />
+      
+              <!-- Email Field -->
+              <input
+                *ngSwitchCase="'email'"
+                [id]="field.controlName"
+                [type]="field.type"
+                [formControlName]="field.controlName"
+                [placeholder]="field.placeholder"
+                [ngClass]="{'is-invalid': isFieldInvalid(field.controlName)}"
+              />
+      
+              <!-- Textarea Field -->
+              <textarea
+                *ngSwitchCase="'textarea'"
+                [id]="field.controlName"
+                [formControlName]="field.controlName"
+                [placeholder]="field.placeholder"
+                [ngClass]="{'is-invalid': isFieldInvalid(field.controlName)}"
+                rows="5"
+              ></textarea>
+            </ng-container>
+            <small *ngIf="isFieldInvalid(field.controlName)" class="error-text">
+              {{ field.label }} is invalid.
+            </small>
+          </div>
+      
+          <button type="submit" [disabled]="contactForm.invalid" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+</div>
+
+  

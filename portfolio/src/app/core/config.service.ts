@@ -78,7 +78,7 @@ export class ConfigService {
         {
           workplace:"The Walt Disney",
           designation:"Software Engineer ||",
-          period:"Apr 2024 - Sept 2024",
+          period:"Oct 2024 - Present",
           jobDescription:[
             {
               list:"Elevating the Disney magic through innovative digital experiences across our resorts, parks and guest experiences.",
@@ -129,7 +129,7 @@ export class ConfigService {
         {
           workplace:"GEP Worldwide",
           designation:"Web Engineer",
-          period:"June 2019 - July 2020",
+          period:"Jun 2019 - Jul 2020",
           jobDescription:[
             {
               list:"Built reuseable and efficient components using Angular 7 framework."
@@ -148,7 +148,7 @@ export class ConfigService {
         {
           workplace:"BTS",
           designation:"Frontend Developer",
-          period:"November 2017 - July 2019",
+          period:"Nov 2017 - Jul 2019",
           jobDescription:[
             {
               list:"Liasing with overseas consultants to implement digital solution for clients through development, customization and productionizing end solutions with high quality"
@@ -229,7 +229,7 @@ export class ConfigService {
       {
         label: "Message",
         type: "textarea",
-        placeholder: "Write your message",
+        placeholder: "Write your message here.....I will get back to you soon",
         controlName: "message",
         validators: {
           required: true,
