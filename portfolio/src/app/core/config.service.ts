@@ -22,10 +22,6 @@ export class ConfigService {
         {
           title:"Contact",
           id:"#contact"
-        },
-        {
-          title:"Contact",
-          id:"#footer"
         }
       ]
     },
@@ -166,12 +162,12 @@ export class ConfigService {
         }
       ]
     },
-    skills:{
-      titleSection:{
-        sectionNumber:"03.",
-        title:"Skills"
-      },
-    },
+    // skills:{
+    //   titleSection:{
+    //     sectionNumber:"03.",
+    //     title:"Skills"
+    //   },
+    // },
     inspiringQuotesConfig:{
       titleSection:{
         sectionNumber:"04.",
