@@ -33,6 +33,31 @@
                 display: block;
                 text-align: center;
             }
+            ::ng-deep {
+            .skills-list{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                list-style: none;
+                padding-top: 20px;
+                li::before {
+                    content: "▹";
+                    position: absolute;
+                    left: 0px;
+                    top: 10px;
+                    color: var(--green);
+                    font-size: var(--fz-sm);
+                    line-height: 12px;
+                }
+                li{
+                    width: 50%;
+                    position: relative;
+                    padding: 5px 0 5px 20px;
+                }
+                
+            }
+        }
+
         }
     }
 }
