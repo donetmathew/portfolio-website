@@ -1,166 +1,181 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ConfigService {
+  constructor() {}
 
-  constructor() { }
-
-  private config:any={
-    header:{
-      logo:"Logo",
-      section:[
+  private config: any = {
+    header: {
+      logo: 'Logo',
+      section: [
         {
-          title:"About",
-          id:"#about"
+          title: 'About',
+          id: '#about',
         },
         {
-          title:"Experience",
-          id:"#experience"
+          title: 'Experience',
+          id: '#experience',
         },
         {
-          title:"Contact",
-          id:"#contact"
-        }
-      ]
+          title: 'Contact',
+          id: '#contact',
+        },
+      ],
     },
-    intro:{
-      introHeader:{
-        title:"Hi, My name is",
-        customCss:{
-          color:""
-        }
-      },
-      introSubHeader:{
-        title:"Donet Mathew",
-        customCss:{
-          color:""
-        }
-      },
-      introDescription:{
-        title:"I am",
-        typedAnimationCoonfig:{
-          words:["a software engineer","a web specialist","an accessibility expert"],
-          timer:100
+    intro: {
+      introHeader: {
+        title: 'Hi, My name is',
+        customCss: {
+          color: '',
         },
-        customCss:{
-          color:""
-        }
       },
-      introSection:{
-        title:"I'm a software engineer based in United States with 8 years of experience specialized in building exceptional websites, native apps, and everything in between. Currently, I'm working with cool folks at",
-        customCss:{
-          color:""
+      introSubHeader: {
+        title: 'Donet Mathew',
+        customCss: {
+          color: '',
         },
-        companyName:"The Walt Disney"
-      }
+      },
+      introDescription: {
+        title: 'I am',
+        typedAnimationCoonfig: {
+          words: [
+            'a software engineer',
+            'a web specialist',
+            'an accessibility expert',
+          ],
+          timer: 100,
+        },
+        customCss: {
+          color: '',
+        },
+      },
+      introSection: {
+        title:
+          "I'm a software engineer based in United States with 8 years of experience specialized in building exceptional websites, native apps, and everything in between. Currently, I'm working with cool folks at",
+        customCss: {
+          color: '',
+        },
+        companyName: 'The Walt Disney',
+      },
     },
-    about:{
-      titleSection:{
-        sectionNumber:"01.",
-        title:"About Me"
+    about: {
+      titleSection: {
+        sectionNumber: '01.',
+        title: 'About Me',
       },
-      mainTitle:"About Me",
-      profilePic:"assets/profile.jpg",
-      description:`Hello! I'm Donet Mathew, a software engineer based in Florida, United States. <br><br>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br> My goal is to always build products that provide pixel-perfect, performant experiences.`
+      mainTitle: 'About Me',
+      profilePic: 'assets/profile.jpg',
+      description: `Hello! I'm Donet Mathew, an experienced software engineer based in <span class="green"> Florida, United States</span> with 8 years of expertise in full stack web development, mobile apps and cloud solutioning. <br><br>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br> My goal is to always build products that provide pixel-perfect, performant experiences.Below are few of the technologies I've been working with recently:
+      <ul class="skills-list">
+      <li>JavaScript ( ES6+ )</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>React Native</li>
+      <li>Angular</li>
+      <li>Node.js</li>
+      <li>AWS</li>
+      </ul>
+      `,
     },
-    experience:{
-      titleSection:{
-        sectionNumber:"02.",
-        title:"Experience"
+    experience: {
+      titleSection: {
+        sectionNumber: '02.',
+        title: 'Experience',
       },
-      list:[
+      list: [
         {
-          workplace:"The Walt Disney",
-          designation:"Software Engineer ||",
-          period:"Oct 2024 - Present",
-          jobDescription:[
+          workplace: 'The Walt Disney',
+          designation: 'Software Engineer ||',
+          period: 'Oct 2024 - Present',
+          jobDescription: [
             {
-              list:"Elevating the Disney magic through innovative digital experiences across our resorts, parks and guest experiences.",
+              list: 'Elevating the Disney magic through innovative digital experiences across our resorts, parks and guest experiences.',
             },
             {
-              list:"Built and maintained dynamic, accesible web applicartions for Disney's resorts and parks, ensuring compliance with WCAG standards."
+              list: "Built and maintained dynamic, accesible web applicartions for Disney's resorts and parks, ensuring compliance with WCAG standards.",
             },
             {
-              list:"Integrated and leveraged analytic tools to monitor user behaviour,identify trends and optimize application performance for high traffic platforms."
+              list: 'Integrated and leveraged analytic tools to monitor user behaviour, identify trends and optimize application performance for high traffic platforms.',
             },
             {
-              list:"Designed and implemented RESTful APIs using Node.js and Express, enabling seamless communication between frontend applications and backend services."
-            }
-          ]
+              list: 'Designed and implemented RESTful APIs using Node.js and Express, enabling seamless communication between frontend applications and backend services.',
+            },
+          ],
         },
         {
-          workplace:"Citi Bank",
-          designation:"Specialist Software Engineer",
-          period:"Apr 2024 - Sept 2024",
-          jobDescription:[
+          workplace: 'Citi Bank',
+          designation: 'Specialist Software Engineer',
+          period: 'Apr 2024 - Sept 2024',
+          jobDescription: [
             {
-              list:"Worked at Citi Bank (via LTIMindtree) on a product to develop comprehensive reports for capital forecasting and assumptions planning, enhancing decision-making processes and financial strategy"
+              list: 'Worked at Citi Bank (via LTIMindtree) on a product to develop comprehensive reports for capital forecasting and assumptions planning, enhancing decision-making processes and financial strategy.',
             },
             {
-              list:"Migrated a traditional grid to AG-Grid at Citi,implementing business logic and features like inline editing, sorting, pagination, drag and drop, and optimizing performance for large datasets"
-            }
-          ]
+              list: 'Migrated a traditional grid to AG-Grid at Citi,implementing business logic and features like inline editing, sorting, pagination, drag and drop, and optimizing performance for large datasets.',
+            },
+          ],
         },
         {
-          workplace:"Deloitte USI",
-          designation:"Senior Consultant",
-          period:"Oct 2020 - Dec 2023",
-          jobDescription:[
+          workplace: 'Deloitte USI',
+          designation: 'Senior Consultant',
+          period: 'Oct 2020 - Dec 2023',
+          jobDescription: [
             {
-              list:"Led a team to orchestrate the end-to-end dvelopment of a cross platform mobile app, revolutionizing sales support for employees."
+              list: 'Led a team to orchestrate the end-to-end dvelopment of a cross platform mobile app, revolutionizing sales support for employees.',
             },
             {
-              list:"Implemented biometric authentication(fingerprint and facial recognition) for the app, enhancing security and streamlining the user experience."
+              list: 'Implemented biometric authentication (fingerprint and facial recognition) for the app, enhancing security and streamlining the user experience.',
             },
             {
-              list:"Developed web APIs using Node.js, AWS Lambda and AWS Fargate, leveraging serverless and containerized solutions."
+              list: 'Developed web APIs using Node.js, AWS Lambda and AWS Fargate, leveraging serverless and containerized solutions.',
             },
             {
-              list:"Involved in the development of a progressive web app (PWA) for an insurance client, driving the project from ideation to successful delivery. Played a key role in designing, implementing and optimizing the application to meet client requirements and enhance user experience. "
-            }
-          ]
+              list: 'Involved in the development of a progressive web app (PWA) for an insurance client, driving the project from ideation to successful delivery. Played a key role in designing, implementing and optimizing the application to meet client requirements and enhance user experience. ',
+            },
+          ],
         },
         {
-          workplace:"GEP Worldwide",
-          designation:"Web Engineer",
-          period:"Jun 2019 - Jul 2020",
-          jobDescription:[
+          workplace: 'GEP Worldwide',
+          designation: 'Web Engineer',
+          period: 'Jun 2019 - Jul 2020',
+          jobDescription: [
             {
-              list:"Built reuseable and efficient components using Angular 7 framework."
+              list: 'Built reuseable and efficient components using Angular 7 framework.',
             },
             {
-              list:"Developed the architecture for the module SPEND in the product 'Smart By GEP'."
+              list: "Developed the architecture for the module SPEND in the product 'Smart By GEP'.",
             },
             {
-              list:"Developed complex grids and highcharts using AG-grid and Highcharts."
+              list: 'Developed complex grids and highcharts using AG-grid and Highcharts.',
             },
             {
-              list:"Trained several interns and junior developers for Angular framework."
-            }
-          ]
+              list: 'Trained several interns and junior developers for Angular framework.',
+            },
+          ],
         },
         {
-          workplace:"BTS",
-          designation:"Frontend Developer",
-          period:"Nov 2017 - Jul 2019",
-          jobDescription:[
+          workplace: 'BTS',
+          designation: 'Frontend Developer',
+          period: 'Nov 2017 - Jul 2019',
+          jobDescription: [
             {
-              list:"Liasing with overseas consultants to implement digital solution for clients through development, customization and productionizing end solutions with high quality"
+              list: 'Liasing with overseas consultants to implement digital solution for clients through development, customization and productionizing end solutions with high quality.',
             },
             {
-              list:"Implemented and designed an e-learning product 'Know The Business' for clients IBM, Mckinsey and STC."
+              list: "Implemented and designed an e-learning product 'Know The Business' for clients IBM, Mckinsey and STC.",
             },
             {
-              list:"Customized the product PULSE for the client SAP MLL and TD Bank using Vanilla JavaScript."
+              list: 'Customized the product PULSE for the client SAP MLL and TD Bank using Vanilla JavaScript.',
             },
             {
-              list:"Participated in complete product development cycle from ideation to implementation for in-house product 'Generic MBS' under agile framework."
-            }
-          ]
-        }
-      ]
+              list: "Participated in complete product development cycle from ideation to implementation for an in-house product 'Generic MBS' under agile framework.",
+            },
+          ],
+        },
+      ],
     },
     // skills:{
     //   titleSection:{
@@ -168,74 +183,76 @@ export class ConfigService {
     //     title:"Skills"
     //   },
     // },
-    inspiringQuotesConfig:{
-      titleSection:{
-        sectionNumber:"04.",
-        title:"Inspiring Quotes"
+    inspiringQuotesConfig: {
+      titleSection: {
+        sectionNumber: '04.',
+        title: 'Inspiring Quotes',
       },
-      carouselConfig:{
-        list:[
-        {
-          title:"Stay hungry, Stay Foolish"
+      carouselConfig: {
+        list: [
+          {
+            title: 'Stay hungry, Stay Foolish',
+          },
+          {
+            title:
+              'Have the courage to follow your heart and intuition. They somehow know what you truly want to become',
+          },
+          {
+            title: 'The greatest risk in life is not taking any risks',
+          },
+        ],
+        previous: {
+          title: '',
+          img: '',
         },
-        {
-          title:"Have the courage to follow your heart and intuition. They somehow know what you truly want to become"
+        next: {
+          title: '',
+          img: '',
         },
-        {
-          title:"The greatest risk in life is not taking any risks"
-        }
-      ],
-      previous:{
-        title:"",
-        img:""
       },
-      next:{
-        title:"",
-        img:""
-      }
-    }
-
     },
     contact: {
-      titleSection:{
-        sectionNumber:"03.",
-        title:"Contact"
+      titleSection: {
+        sectionNumber: '03.',
+        title: 'Contact',
       },
-      contactConfig:[
-      {
-        label: "Name",
-        type: "text",
-        placeholder: "Enter your name",
-        controlName: "name",
-        validators: {
-          required: true,
-          minLength: 3,
+      contactConfig: [
+        {
+          label: 'Name',
+          type: 'text',
+          placeholder: 'Enter your name',
+          controlName: 'name',
+          validators: {
+            required: true,
+            minLength: 3,
+          },
         },
-      },
-      {
-        label: "Email",
-        type: "email",
-        placeholder: "Enter your email",
-        controlName: "email",
-        validators: {
-          required: true,
-          email: true,
+        {
+          label: 'Email',
+          type: 'email',
+          placeholder: 'Enter your email',
+          controlName: 'email',
+          validators: {
+            required: true,
+            email: true,
+          },
         },
-      },
-      {
-        label: "Message",
-        type: "textarea",
-        placeholder: "Write your message here.....I will get back to you soon",
-        controlName: "message",
-        validators: {
-          required: true,
-          minLength: 10,
+        {
+          label: 'Message',
+          type: 'textarea',
+          placeholder:
+            'Write your message here.....I will get back to you soon',
+          controlName: 'message',
+          validators: {
+            required: true,
+            minLength: 10,
+          },
         },
-      },
-    ]}    
-  }
+      ],
+    },
+  };
 
-  getConfig(){
+  getConfig() {
     return this.config;
   }
 }
